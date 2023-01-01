@@ -1,10 +1,10 @@
-package org.zerock.service;
+package com.oopsdev.service;
+
+import com.oopsdev.domain.Criteria;
+import com.oopsdev.domain.ReplyPageDTO;
+import com.oopsdev.domain.ReplyVO;
 
 import java.util.List;
-
-import org.zerock.domain.Criteria;
-import org.zerock.domain.ReplyPageDTO;
-import org.zerock.domain.ReplyVO;
 
 public interface ReplyService {
 

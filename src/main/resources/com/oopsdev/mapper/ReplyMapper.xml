@@ -5,13 +5,12 @@
 <mapper namespace="com.oopsdev.mapper.ReplyMapper">
 
 	<insert id="insert">
-
 		insert into oopsdev.tbl_reply (rno, bno, reply, replyer)
 		values (seq_reply.nextval, #{bno}, #{reply}, #{replyer})
 
 	</insert>
 
-	<select id="read" resultType="org.zerock.domain.ReplyVO">
+	<select id="read" resultType="com.oopsdev.domain.ReplyVO">
 
 		select * from oopsdev.tbl_reply where rno =
 		#{rno}
@@ -34,7 +33,7 @@
 
 
 <!-- 	<select id="getListWithPaging"
-		resultType="org.zerock.domain.ReplyVO">
+		resultType="com.oopsdev.domain.ReplyVO">
 
 		select rno, bno, reply, replyer, replyDate, updatedate
 		from oopsdev.tbl_reply
@@ -43,7 +42,7 @@
 
 	</select -->
 
-<select id="getListWithPaging" resultType="org.zerock.domain.ReplyVO">
+<select id="getListWithPaging" resultType="com.oopsdev.domain.ReplyVO">
 
   <![CDATA[
  select  rno, bno, reply, replyer, replydate, updatedate

@@ -1,25 +1,22 @@
-package org.zerock.service;
+package com.oopsdev.service;
 
-import java.util.List;
-
-import org.springframework.stereotype.Service;
-import org.zerock.domain.Criteria;
-import org.zerock.domain.ReplyPageDTO;
-import org.zerock.domain.ReplyVO;
-import org.zerock.mapper.ReplyMapper;
-
+import com.oopsdev.domain.Criteria;
+import com.oopsdev.domain.ReplyPageDTO;
+import com.oopsdev.domain.ReplyVO;
+import com.oopsdev.mapper.ReplyMapper;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Log4j
 @AllArgsConstructor
 public class ReplyServiceImpl implements ReplyService {
 
-  
   private ReplyMapper mapper;
 
-  
   
   @Override
   public int register(ReplyVO vo) {

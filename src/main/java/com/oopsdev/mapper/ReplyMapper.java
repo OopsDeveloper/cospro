@@ -1,10 +1,11 @@
-package org.zerock.mapper;
+package com.oopsdev.mapper;
+
+import com.oopsdev.domain.Criteria;
+import com.oopsdev.domain.ReplyVO;
+import org.apache.ibatis.annotations.Param;
+
 
 import java.util.List;
-
-import org.apache.ibatis.annotations.Param;
-import org.zerock.domain.Criteria;
-import org.zerock.domain.ReplyVO;
 
 public interface ReplyMapper {
 
