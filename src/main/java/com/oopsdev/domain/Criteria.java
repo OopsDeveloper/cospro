@@ -10,8 +10,8 @@ import lombok.ToString;
 @Getter
 public class Criteria {
 
-  private int pageNum;
-  private int amount;
+  private int pageNum; //현재 페이지 번호
+  private int amount; //페이지당 출력되는 게시글 수
   
   private String type;
   private String keyword;
